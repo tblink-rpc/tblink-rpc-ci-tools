@@ -17,19 +17,19 @@ jobs:
         autoconf --version
         cd ci-tools
 
-	wget -O iverilog-11_0.tar.gz https://github.com/steveicarus/iverilog/archive/refs/tags/v11_0.tar.gz
-	tar xvzf iverilog-11_0.tar.gz
+        wget -O iverilog-11_0.tar.gz https://github.com/steveicarus/iverilog/archive/refs/tags/v11_0.tar.gz
+        tar xvzf iverilog-11_0.tar.gz
         cd iverilog-11_0
-	/bin/sh autoconf
-	cd ..
-	tar czf iverilog-11_0.tar.gz iverilog-11_0
+        /bin/sh autoconf
+        cd ..
+        tar czf iverilog-11_0.tar.gz iverilog-11_0
 
-	wget -O verilator-4.204.tar.gz https://github.com/verilator/verilator/archive/refs/tags/v4.204.tar.gz
-	tar xvzf verilator-4.204.tar.gz
-	cd verilator-4.204
-	/bin/sh autoconf
-	cd ..
-	tar czf verilator-4.204.tar.gz verilator-4.204
+        wget -O verilator-4.204.tar.gz https://github.com/verilator/verilator/archive/refs/tags/v4.204.tar.gz
+        tar xvzf verilator-4.204.tar.gz
+        cd verilator-4.204
+        /bin/sh autoconf
+        cd ..
+        tar czf verilator-4.204.tar.gz verilator-4.204
 
     - name: Build Tool-Build Image
       run: |
