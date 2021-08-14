@@ -13,6 +13,8 @@ jobs:
     - name: Docker Help
       run: |
         docker build --help
+        apt-get update -y
+        apt-get install -y gperf
     - name: Fetch dependencies
       run: |
         autoconf --version
