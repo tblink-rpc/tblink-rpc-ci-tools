@@ -34,7 +34,7 @@ jobs:
         wget -O verilator-4.204.tar.gz https://github.com/verilator/verilator/archive/refs/tags/v4.204.tar.gz
         tar xvzf verilator-4.204.tar.gz
         cd verilator-4.204
-        /bin/sh ./autoconf
+        autoconf
         cd ..
         tar czf verilator-4.204.tar.gz verilator-4.204
 
